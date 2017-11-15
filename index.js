@@ -70,7 +70,7 @@ function removeFromCart(item) {
   while(i--){
     if(cart[i].hasOwnProperty(item)) {
         itemInCart = true
-        cart.splice(i,1);
+        cart.splice(i++,1);
       }
   //  } else {
     if(itemInCart = false) {

@@ -66,13 +66,22 @@ function total() {
 function removeFromCart(item) {
 
   var i = cart.length;
-
-  while(i--){
+  var xItem = item
+  /*while(i--){
     if(cart[i].hasOwnProperty(item)) {
         cart.splice(i,1);
     } else {
         console.log('That item is not in your cart.')
       }
+    }
+  return cart*/
+  while(i--){
+    if(cart[i].hasOwnProperty(xItem)) {
+        cart.splice(i,1);
+    }
+  while(i--){
+    if(cart[i].hasOwnProperty(xItem)) {
+      console.log('That item is not in your cart.')
     }
   return cart
 }

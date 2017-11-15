@@ -70,8 +70,7 @@ function removeFromCart(item) {
   var i = cart.length;
 
   while(i--){
-     if(
-       cart[i].hasOwnProperty(item) {
+     if(cart[i].hasOwnProperty(item)) {
       //  && (arguments.length > 2 && cart[i][item] === value ) ){
         array.splice(i,1);
         return cart

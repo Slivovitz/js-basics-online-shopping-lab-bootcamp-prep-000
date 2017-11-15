@@ -65,18 +65,15 @@ function total() {
 
 function removeFromCart(item) {
 
-//  var removeByAttr = function(arr, attr){
-//  var itemToRemove = item
   var i = cart.length;
 
   while(i--){
      if(cart[i].hasOwnProperty(item)) {
-      //  && (arguments.length > 2 && cart[i][item] === value ) ){
         cart.splice(i,1);
         return cart
 
       } else {
-        console.log("That item is not in your cart.")
+        console.log('That item is not in your cart.')
       }
   }
 }

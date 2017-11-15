@@ -72,7 +72,7 @@ function removeFromCart(item) {
   while(i--){
      if(cart[i].hasOwnProperty(item)) {
       //  && (arguments.length > 2 && cart[i][item] === value ) ){
-        array.splice(i,1);
+        cart.splice(i,1);
         return cart
 
       } else {

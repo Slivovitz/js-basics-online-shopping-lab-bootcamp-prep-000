@@ -79,13 +79,14 @@ function removeFromCart(item) {
     if(cart[i].hasOwnProperty(xItem)) {
         cart.splice(i,1);
     }
+  }  
   while(i--){
     if(cart[i].hasOwnProperty(xItem)) {
       console.log('That item is not in your cart.')
     }
-  return cart
+}  return cart
 }
 
-function placeOrder(cardNumber) {
+/*function placeOrder(cardNumber) {
   // write your code here
 }

@@ -72,14 +72,14 @@ function removeFromCart(item) {
       itemInCart = true
       cart.splice(i,1);
       }
-  //  } else {
-  //  if(itemInCart = false) {
-  //    console.log('That item is not in your cart.')
-  //    }
+
+  if(itemInCart === false) {
+    console.log('That item is not in your cart.')
+    }
     }
   return cart
 }
-// }
+}
 function placeOrder(cardNumber) {
   // write your code here
 }

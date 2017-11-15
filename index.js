@@ -66,13 +66,13 @@ function total() {
 function removeFromCart(item) {
 
 //  var removeByAttr = function(arr, attr){
-  var itemToRemove = item
+//  var itemToRemove = item
   var i = cart.length;
 
   while(i--){
-     if( cart[i]
-        && cart[i].hasOwnProperty(itemToRemove)
-        && (arguments.length > 2 && cart[i][itemToRemove] === value ) ){
+     if(
+       cart[i].hasOwnProperty(item) {
+      //  && (arguments.length > 2 && cart[i][item] === value ) ){
         array.splice(i,1);
         return cart
 

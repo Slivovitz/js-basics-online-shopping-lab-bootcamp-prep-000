@@ -64,19 +64,22 @@ function total() {
   }
 
 function removeFromCart(item) {
-
+  let itemInCart = false
   var i = cart.length;
 
   while(i--){
     if(cart[i].hasOwnProperty(item)) {
+        itemInCart = true
         cart.splice(i,1);
-    } else {
-        console.log('That item is not in your cart.')
       }
+  //  } else {
+    if(itemInCart = false) {
+      console.log('That item is not in your cart.')
+  //    }
     }
   return cart
 }
-
+}
 function placeOrder(cardNumber) {
   // write your code here
 }

@@ -65,9 +65,9 @@ function total() {
 
 function removeFromCart(item) {
 
-  var i = cart.length;
+  var l = cart.length;
 
-  while(i--){
+  for (let i = 0; i < l; i++)
     if(cart[i].hasOwnProperty(item)) {
         cart.splice(i,1);
     } else {
@@ -75,7 +75,7 @@ function removeFromCart(item) {
       }
     }
   return cart
-  }
+}
 
 function placeOrder(cardNumber) {
   // write your code here
